@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContainerComponent implements OnInit {
 
+  name: string;
+  names: string[] = ["max", "john", "derek"];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  eventFromOuter(event) {
+    this.name = event;
   }
 
 }
