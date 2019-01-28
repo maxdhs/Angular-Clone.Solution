@@ -1,0 +1,19 @@
+* {
+    background-color: white;
+    vertical-align: baseline;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px black;
+    margin: 2px;
+    
+}
