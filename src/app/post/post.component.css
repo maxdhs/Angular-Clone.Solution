@@ -17,3 +17,7 @@ img {
     margin: 2px;
     
 }
+
+*:link {
+    text-decoration: none;
+}
