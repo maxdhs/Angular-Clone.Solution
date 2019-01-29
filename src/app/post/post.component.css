@@ -1,6 +1,11 @@
 * {
     background-color: white;
     vertical-align: baseline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 12px;
+   
 }
 
 img {
