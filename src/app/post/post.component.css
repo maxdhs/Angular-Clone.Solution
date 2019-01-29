@@ -26,3 +26,9 @@ img {
 *:link {
     text-decoration: none;
 }
+
+
+#mainimg {
+    width: 250px;
+    height: 250px;
+}

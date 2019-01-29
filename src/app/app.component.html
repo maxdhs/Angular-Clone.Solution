@@ -1,27 +1,5 @@
 <div id="heading"><img src="../assets/img/redditicon.png" alt=""><img src="../assets/img/sharelink.png" alt=""><input type="text" placeholder="search reddit"></div>
 
-<app-post [body]="body1" [subreddit]="subreddit1" [imgsrc]="imgsrc1"></app-post>
-
-<app-post [body]="body2" [subreddit]="subreddit2" [imgsrc]="imgsrc2"></app-post>
-
-<app-post [body]="body3" [subreddit]="subreddit3" [imgsrc]="imgsrc3"></app-post>
-
-<app-post [body]="body4" [subreddit]="subreddit4" [imgsrc]="imgsrc4"></app-post>
-
-<app-post [body]="body1" [subreddit]="subreddit1" [imgsrc]="imgsrc1"></app-post>
-
-<app-post [body]="body2" [subreddit]="subreddit2" [imgsrc]="imgsrc2"></app-post>
-
-<app-post [body]="body3" [subreddit]="subreddit3" [imgsrc]="imgsrc3"></app-post>
-
-<app-post [body]="body4" [subreddit]="subreddit4" [imgsrc]="imgsrc4"></app-post>
-
-<app-post [body]="body2" [subreddit]="subreddit2" [imgsrc]="imgsrc2"></app-post>
-
-<app-post [body]="body3" [subreddit]="subreddit3" [imgsrc]="imgsrc3"></app-post>
-
-<app-post [body]="body4" [subreddit]="subreddit4" [imgsrc]="imgsrc4"></app-post>
-
-<app-post [body]="body1" [subreddit]="subreddit1" [imgsrc]="imgsrc1"></app-post>
-
-<app-post [body]="body2" [subreddit]="subreddit2" [imgsrc]
+<app-newpost (newPostEmitter)="addPost($event)"></app-newpost>
+<router-outlet></router-outlet>
+<app-post *ngFor="let post of posts" [post]="post"></app-post>

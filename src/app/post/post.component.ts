@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Post } from '../post.model';
 
 @Component({
   selector: 'app-post',
@@ -7,11 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  @Input() body: string;
-
-  @Input() imgsrc: string;
-
-  @Input() subreddit: string;
+  @Input() post: Post;
 
   constructor() { }
 
