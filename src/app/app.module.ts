@@ -11,6 +11,14 @@ import { PostComponent } from './post/post.component'
 import { PostService } from './post.service';
 import { NewpostComponent } from './newpost/newpost.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -24,7 +32,7 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     FormsModule,
     HttpModule,
     routing,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
   providers: [PostService],
