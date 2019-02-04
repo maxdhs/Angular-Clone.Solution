@@ -1,17 +1,21 @@
-<div>
-<img class="icon" src={{post.imgsrc}}>
+<a routerLink="newpost">Newpost</a>
 
-<strong>{{post.subreddit}}</strong>
+<div *ngFor="let post of posts | async" (click)="goToDetailPage(post)">
+  <img class="icon" src={{post.imgsrc}}>
+  
+  <strong>{{post.subreddit}}</strong>
+  
+  <sub> • Posted byu/Keffpie  13 hours ago</sub>
+  
+  <br>
+  
+  <p>{{post.body}}</p>
+  
+  <img id="mainimg" src={{post.imgsrc}}>
+  
+  <br>
+  
+  <sub><img src="../assets/img/upvote.png"> 34.5k <img src="../assets/img/downvote.png"> 💬 35.2k Comments <img src="../assets/img/sharearrow.png"> Share ... </sub>
 
-<sub> • Posted byu/Keffpie  13 hours ago</sub>
-
-<br>
-
-<p>{{post.body}}</p>
-
-<img id="mainimg" src={{post.imgsrc}}>
-
-<br>
-
-<sub><img src="../assets/img/upvote.png"> 34.5k <img src="../assets/img/downvote.png"> 💬 35.2k Comments <img src="../assets/img/sharearrow.png"> Share ... </sub>
 </div>
+ 

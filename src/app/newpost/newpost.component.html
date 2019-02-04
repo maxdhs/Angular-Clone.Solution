@@ -1,6 +1,4 @@
-<label>enter new post</label>
-    <br>
-      <input type="text" placeholder="enter body" #newBody>
-      <input type="text" placeholder="enter imgsrc" #newImgsrc>
-      <input type="text" placeholder="enter subreddit" #newSubreddit>
-      <button (click)="submitForm(newBody.value, newImgsrc.value, newSubreddit.value)">submit</button>
+<input #newBody placeholder="New Body..">
+<input #newSubreddit placeholder="New Subreddit..">
+<input #newImgsrc placeholder="New Imgsrc..">
+<button routerLink="" (click)="submitPost(newBody.value, newSubreddit.value, newImgsrc.value)">Submit</button>

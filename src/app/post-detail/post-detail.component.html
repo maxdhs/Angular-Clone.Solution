@@ -1,0 +1,6 @@
+<h1>Post Key: {{ (postToDisplay | async)?.$key }}</h1>
+<h1>Post Body: {{ (postToDisplay | async)?.body }}</h1>
+<h1>Subreddit: {{ (postToDisplay | async)?.subreddit }}</h1>
+<h1>Post imgsrc: {{ (postToDisplay | async)?.imgsrc }}</h1>
+
+<button (click)="clickDelete()">Delete Post</button>

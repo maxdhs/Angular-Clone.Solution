@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('clone App', () => {
+describe('online-store App', () => {
   let page: AppPage;
 
   beforeEach(() => {

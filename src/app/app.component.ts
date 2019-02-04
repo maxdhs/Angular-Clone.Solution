@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Post } from './post.model';
-import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { PostService } from 'app/post.service';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +8,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router: Router){}
 
-  posts: Post[] = [
-
-  ]
-
-  addPost(event){
-   this.posts.push(event);
-  }
 }
