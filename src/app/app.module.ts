@@ -6,7 +6,6 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { environment } from 'environments/environment';
 import { PostComponent } from './post/post.component'
 import { PostService } from './post.service';
 import { NewpostComponent } from './newpost/newpost.component';
